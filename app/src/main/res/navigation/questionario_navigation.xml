@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/questionario_navigation"
+    app:startDestination="@id/peguntaUmFragment">
+
+    <fragment
+        android:id="@+id/peguntaUmFragment"
+        android:name="com.example.pefil_investidor_tp3.Fragments.Questao1Fragment"
+        android:label="fragment_pegunta_um"
+        tools:layout="@layout/fragment_questao_1" >
+        <action
+            android:id="@+id/action_peguntaUmFragment2_to_perguntaDoisFragment"
+            app:destination="@id/perguntaDoisFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/perguntaDoisFragment"
+        android:name="com.example.pefil_investidor_tp3.Fragments.Questao2Fragment"
+        android:label="fragment_pergunta_dois"
+        tools:layout="@layout/fragment_questao_2" >
+        <action
+            android:id="@+id/action_perguntaDoisFragment_to_questao3Fragment"
+            app:destination="@id/questao3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questao10Fragment"
+        android:name="com.example.pefil_investidor_tp3.Fragments.Questao10Fragment"
+        android:label="fragment_questao_10"
+        tools:layout="@layout/fragment_questao_10" >
+        <action
+            android:id="@+id/action_questao10Fragment_to_questao11Fragment"
+            app:destination="@id/questao11Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questao11Fragment"
+        android:name="com.example.pefil_investidor_tp3.Fragments.Questao11Fragment"
+        android:label="fragment_questao_11"
+        tools:layout="@layout/fragment_questao_11" />
+    <fragment
+        android:id="@+id/questao3Fragment"
+        android:name="com.example.pefil_investidor_tp3.Fragments.Questao3Fragment"
+        android:label="fragment_questao_3"
+        tools:layout="@layout/fragment_questao_3" >
+        <action
+            android:id="@+id/action_questao3Fragment_to_questao4Fragment"
+            app:destination="@id/questao4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questao4Fragment"
+        android:name="com.example.pefil_investidor_tp3.Fragments.Questao4Fragment"
+        android:label="fragment_questao_4"
+        tools:layout="@layout/fragment_questao_4" >
+        <action
+            android:id="@+id/action_questao4Fragment_to_questao5Fragment"
+            app:destination="@id/questao5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questao5Fragment"
+        android:name="com.example.pefil_investidor_tp3.Fragments.Questao5Fragment"
+        android:label="fragment_questao_5"
+        tools:layout="@layout/fragment_questao_5" >
+        <action
+            android:id="@+id/action_questao5Fragment_to_questao6Fragment"
+            app:destination="@id/questao6Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questao6Fragment"
+        android:name="com.example.pefil_investidor_tp3.Fragments.Questao6Fragment"
+        android:label="fragment_questao_6"
+        tools:layout="@layout/fragment_questao_6" >
+        <action
+            android:id="@+id/action_questao6Fragment_to_questao7Fragment"
+            app:destination="@id/questao7Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questao7Fragment"
+        android:name="com.example.pefil_investidor_tp3.Fragments.Questao7Fragment"
+        android:label="fragment_questao_7"
+        tools:layout="@layout/fragment_questao_7" >
+        <action
+            android:id="@+id/action_questao7Fragment_to_questao8Fragment"
+            app:destination="@id/questao8Fragment" />
+        <action
+            android:id="@+id/action_questao7Fragment_to_questao8Fragment2"
+            app:destination="@id/questao8Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questao8Fragment"
+        android:name="com.example.pefil_investidor_tp3.Fragments.Questao8Fragment"
+        android:label="fragment_questao_8"
+        tools:layout="@layout/fragment_questao_8" >
+        <action
+            android:id="@+id/action_questao8Fragment_to_questao9Fragment"
+            app:destination="@id/questao9Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questao9Fragment"
+        android:name="com.example.pefil_investidor_tp3.Fragments.Questao9Fragment"
+        android:label="fragment_questao_9"
+        tools:layout="@layout/fragment_questao_9" >
+        <action
+            android:id="@+id/action_questao9Fragment_to_questao10Fragment"
+            app:destination="@id/questao10Fragment" />
+    </fragment>
+</navigation>

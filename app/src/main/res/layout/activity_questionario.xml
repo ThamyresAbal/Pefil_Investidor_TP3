@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <fragment
+        android:id="@+id/fragmentQuestionario"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="372dp"
+        android:layout_height="636dp"
+        app:defaultNavHost="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/questionario_navigation"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearMenuItem"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentQuestionario">
+
+        <Button
+            android:id="@+id/btnAnterior"
+            style="@style/ButtonTheme"
+            android:drawableLeft="@drawable/ic_chevron_left_black_24dp"
+            android:text="@string/title_nav_anterior" />
+
+        <Button
+            android:id="@+id/btnProximo"
+            style="@style/ButtonTheme"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            android:text="@string/title_nav_proximo"
+            android:onClick="vali"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

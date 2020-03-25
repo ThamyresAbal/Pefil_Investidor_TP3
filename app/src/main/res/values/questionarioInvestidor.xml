@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="Pergunta1">Por quanto tempo você pretende deixar seu dinheiro investido?</string>
+    <string name="RespostaA_P1">Menos de 6 meses.</string>
+    <string name="RespostaB_P1">Entre 6 meses e 1 ano.</string>
+    <string name="RespostaC_P1">Entre 1 ano e 3 anos.</string>
+    <string name="RespostaD_P1">Acima de 3 anos.</string>
+
+    <string name="Pergunta2">Qual o objetivo desse investimento?</string>
+    <string name="RespostaA_P2">Preservação do capital para não perder valor ao longo do tempo,
+        assumindo baixos riscos de perdas</string>
+    <string name="RespostaB_P2">Aumento gradual do capital ao longo do tempo,
+        assumindo riscos "moderados"</string>
+    <string name="RespostaC_P2">Aumento do capital acima da taxa de retorno média do mercado,
+        mesmo que isso implique assumir riscos de perdas elevadas</string>
+    <string name="RespostaD_P2">Obter no curto prazo retornos elevados e signifcativamente acima
+        da taxa de retorno média do mercado, assumindo riscos elevados.</string>
+
+    <string name="Pergunta3">Qual das alternativas melhor classica sua formação e
+        experiência com o mercado financeiro?</string>
+    <string name="RespostaA_P3">Não possuo formação acadêmica ou conhecimento do mercado financeiro.</string>
+    <string name="RespostaB_P3">Possuo formação acadêmica na área financeira, mas não tenho
+        experiência com o mercado financeiro.</string>
+    <string name="RespostaC_P3">Possuo formação acadêmica em outra área, mas possuo conhecimento
+        do mercado financeiro.</string>
+    <string name="RespostaD_P3">Possuo formação acadêmica na área financeira ou pleno
+        conhecimento do mercado financeiro.</string>
+
+    <string name="Pergunta4">Qual das alternativas melhor classica sua formação e experiência com
+        o mercado financeiro?Considerando seus rendimentos regulares, qual a porcentagem você
+        pretende reservar para aplicações financeiras.</string>
+    <string name="RespostaA_P4">No máximo25%.</string>
+    <string name="RespostaB_P4">Entre 25,01%  e 50%.</string>
+    <string name="RespostaC_P4">Acima de 50%.</string>
+
+    <string name="Pergunta5">Caso as suas aplicações sofressem uma queda superior a 30%, o que você faria?</string>
+    <string name="RespostaA_P5">Resgataria toda a aplicação e aplicaria na poupança.</string>
+    <string name="RespostaB_P5">Manteria aplicação aguardando uma melhora do mercado.</string>
+    <string name="RespostaC_P5">Aumentaria a aplicação para aproveitar as oportunidades do mercado.</string>
+
+    <string name="Pergunta6">Como está distribuído o seu patrimônio?</string>
+    <string name="RespostaA_P6">Meu patrimônio não está aplicado ou está todo aplicado em renda
+        fixa e/ou imóveis.</string>
+    <string name="RespostaB_P6" tools:ignore="StringFormatInvalid">Menos de 25% em renda variável e o restante em renda fixa e ou imóveis.</string>
+    <string name="RespostaC_P6" tools:ignore="StringFormatInvalid">Entre 25,01 e 50% aplicado em renda variável e/o restante em
+        renda fixa e/ou imóveis.</string>
+    <string name="RespostaD_P6" tools:ignore="StringFormatInvalid">Acima de 50% em renda variável.</string>
+
+    <string name="Pergunta7">Em relação as aplicações e rendimentos, em qual dessas situações
+        você see enquadra?</string>
+    <string name="RespostaA_P7">Conto com o rendimento dessas aplicações para complementar minha
+        renda mensal.</string>
+    <string name="RespostaB_P7">Eventualmente posso resgatar parte das aplicações para fazer
+        frente aos meus gastos. Contudo, não tenho intenção de resgatar no curto prazo e pretendo
+        fazer aplicações regulares.</string>
+    <string name="RespostaC_P7">Não tenho intenção de resgatar no curto prazo, mas não pretendo
+        realizar novas aplicações.</string>
+    <string name="RespostaD_P7">Não tenho intenção de resgatar no curto prazo e ainda pretendo
+        fazer aplicações regulares.</string>
+
+    <string name="Pergunta8">Indique em quais aplicações listadas abaixo você já investiu e
+        qual a frequência nos últimos dois anos. Pode assinalar mais do que uma alternativa.</string>
+
+    <string name="TipoInvestimento_P8">Tipos de investimento</string>
+    <string name="TipoInvestimento1">
+        Fundos Renda Fixa Simples ou Indexados
+        Fundos Renda Fixa Duração Baixa, Média ou Livre
+        Renda Fixa Títulos Públicos
+        Renda Fixa (CDB, LCI, LCA, LF Sênior) indexada ao CDI
+        Fundos Multimercados Balanceados, Dinâmicos ou de Capital Protegido
+        Títulos Não Financeiros (Debêntures, CRI, CRA, CDCA, CCB, CPR) indexado ao CDI –
+        Emissor com Grau de Investimento
+        LF Subordinada – Emissor com Grau de Investimento
+        BTC – Posições doadoras em Empréstimos de Ações
+    </string>
+    <string name="TipoInvestimento2">
+        FIDC
+        Títulos Não Financeiros (Debêntures, CRI, CRA, CDCA, CCB, CPR)
+        indexado ao CDI – Emissor sem Grau de Investimento
+    </string>
+    <string name="TipoInvestimento3">
+        Fundos Renda Fixa Duração Média ou Livre – Crédito Livre
+        Fundos Renda Fixa Duração Alta
+        Fundos Ações
+        Fundos com Alavancagem
+        Fundos Multimercados
+        Fundos Imobiliários
+        FIP
+        FIDC – Outros Indexadores ex CDI – Emissão sem Grau
+        de Investimento – Prazo acima de 3 anos
+        Fundo Cambial
+        Ações (Mercado à vista, BDR, ETF)
+        LF Subordinada – Emissor sem Grau de Investimento
+        BTC – Posições tomadoras em Empréstimos de Ações
+        Derivativos Listados em Bolsa (Futuros, Opções e Termos)
+    </string>
+
+    <string name="TI_1">Nunca investi______________________0 ponto</string>
+    <string name="TI_1_8">1 a 2 vezes________________________1 ponto</string>
+    <string name="TI_2_8">3 ou + vezes_______________________1 ponto</string>
+
+
+    <string name="RespostaA_P8">Entre 0 e 1 ponto.</string>
+    <string name="RespostaB_P8">Entre 2 e 4 pontos.</string>
+    <string name="RespostaC_P8">Acima de 5 pontos</string>
+    <string name="obs_quest_nove">Obs: Efetue a somatória dos pontos referente a questão acima e escolha a
+alternativa equivalente:</string>
+
+    <string name="Pergunta9">Tomando por base as respostas da questão anterior, informar o volume
+        aproximado que foi destinado a cada operação no período.</string>
+    <string name="RespostaA_P9">1 ponto.</string>
+    <string name="RespostaB_P9">Entre 2 e 6 pontos.</string>
+    <string name="RespostaC_P9">Acima de 7 pontos</string>
+    <string name="TI_2">Menos de R$ 10 mil</string>
+    <string name="TI_3">Entre R$ 10.001 e R$ 50.000</string>
+    <string name="TI_4">Entre R$ 50.001 e R$ 100.000</string>
+    <string name="TI_5">Acima de R$ 100.001</string>
+
+    <string name="zero">0</string>
+    <string name="um">1</string>
+    <string name="dois">2</string>
+    <string name="tres">3</string>
+    <string name="quatro">4</string>
+    <string name="cinco">5</string>
+    <string name="sete" >7</string>
+    <string name="oito">8</string>
+    <string name="nove">9</string>
+    <string name="dez">10</string>
+
+
+    <string name="Pergunta10">Qual sua faixa de renda mensal média?</string>
+    <string name="RespostaA_P10">Até R$ 1.000.</string>
+    <string name="RespostaB_P10">De R$ 1.001 até R$ 5.000.</string>
+    <string name="RespostaC_P10">De R$ 5.001 até R$ 10.000</string>
+    <string name="RespostaD_P10">Acima de R$ 10.000</string>
+
+    <string name="Pergunta11">Qual o valor aproximado do seu patrimônio?</string>
+    <string name="RespostaA_P11">Até R$ 10.000.</string>
+    <string name="RespostaB_P11">De R$ 10.000 até R$ 100.000.</string>
+    <string name="RespostaC_P11">De R$ 100.001 até R$ 500.000</string>
+    <string name="RespostaD_P11">De R$ 500.001 até R$ 1.000.000</string>
+    <string name="RespostaE_P11">Acima de R\$ 1.000.001</string>
+
+</resources>

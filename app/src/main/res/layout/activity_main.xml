@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B6D9FD">
+
+    <TextView
+        android:id="@+id/textViewExplicacao"
+        android:layout_width="321dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center_horizontal"
+        android:text="Este é um teste rápido para saber o seu perfil de investimento, segundo o Banco Paulista.\nResponda a todas as questões com calma e sinceridade. \nBoa sorte! ^^"
+        android:textAlignment="center"
+        android:textColor="#100B0B"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome completo"
+        android:textColor="#000"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNomeCompleto"
+        app:layout_constraintStart_toStartOf="@+id/textViewExplicacao" />
+
+    <EditText
+        android:id="@+id/editTextNomeCompleto"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="100dp"
+        android:hint="Digite seu nome completo"
+        app:layout_constraintEnd_toEndOf="@+id/textViewExplicacao"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewNome"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExplicacao" />
+
+    <Button
+        android:id="@+id/buttonIniciar"
+        style="@style/ButtonTheme"
+        android:layout_width="0dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/title_iniciar_quest"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNomeCompleto"
+        app:layout_constraintStart_toStartOf="@+id/editTextNomeCompleto"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNomeCompleto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

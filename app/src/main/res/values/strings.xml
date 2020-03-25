@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Pefil_Investidor_TP3</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">\o/</string>
+    <string name="title_activity_questionario">QuestionarioActivity</string>
+    <string name="title_iniciar_quest">Iniciar questionário</string>
+    <string name="title_nav_proximo">Próximo</string>
+    <string name="title_nav_anterior">Anterior</string>
+    <string name="title_app">QUESTIONÁRIO PARA ANÁLISE DE PERFIL DO INVESTIDOR</string>
+    <string name="title_Resultado">CLASSIFICAÇÃO DO PERFIL DO INVESTIDOR</string>
+    <string name="Ptn">Pontos :</string>
+    <string name="Ptn2">Pontuação Final: </string>
+    <string name="PtnValorConservador">Conservador: até 12 pontos.</string>
+    <string name="PtnValorModerado">Moderado: de 13 a 29 pontos.</string>
+    <string name="PtnValorArrojado">Arrojado: A partir de 29 pontos.</string>
+    <string name="txtPnt">Pontuação :</string>
+    <string name="txtQuest">Questões</string>
+    <string name="TipoPerfil">Perfil</string>
+    <string name="T_1">Conservador</string>
+    <string name="T_2">Moderado</string>
+    <string name="T_3">Arrojado</string>
+
+
+</resources>
