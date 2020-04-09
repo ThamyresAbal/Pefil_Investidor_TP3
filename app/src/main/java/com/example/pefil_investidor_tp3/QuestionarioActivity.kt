@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.core.view.isGone
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.example.pefil_investidor_tp3.Model.DadosViewModel
 import kotlinx.android.synthetic.main.activity_questionario.*
 import kotlinx.android.synthetic.main.fragment_questao_1.*
@@ -16,11 +17,12 @@ class QuestionarioActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_questionario)
 
-        val navControler = findNavController(R.id.questionario_navigation)
+        //val navControler = findNavController(R.id.questionario_navigation)
 
-        var VM = ViewModelProviders.of(this).get(DadosViewModel::class.java)
 
-        setContentView(R.layout.fragment_questao_1)
+
+       // findNavController().navigate(R.layout.fragment_questao_1)
+        //setContentView(R.layout.fragment_questao_1)
     }
 /*
     fun validarBotao():Boolean{

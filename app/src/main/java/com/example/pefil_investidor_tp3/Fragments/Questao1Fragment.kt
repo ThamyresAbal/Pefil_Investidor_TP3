@@ -5,10 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import androidx.core.view.isGone
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.example.pefil_investidor_tp3.Model.DadosViewModel
 import com.example.pefil_investidor_tp3.R
 import kotlinx.android.synthetic.main.activity_questionario.*
@@ -28,6 +27,7 @@ class Questao1Fragment : Fragment() {
 
         val model = ViewModelProviders.of(this)[DadosViewModel::class.java]
         model.SomaPontos.add(validarResposta())
+        findNavController().navigate(R.id.perguntaDoisFragment)
 
     }
     fun validarResposta(): Int {
@@ -42,6 +42,7 @@ class Questao1Fragment : Fragment() {
                     Toast.LENGTH_SHORT
                 ).show()*/
             }
+
 
         return 0 //pontuacao
     }

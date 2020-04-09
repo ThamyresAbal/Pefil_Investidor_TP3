@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.lifecycle.ViewModelProviders
+import com.example.pefil_investidor_tp3.Model.DadosViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -12,13 +14,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var intent =Intent(this,ResultadoActivity::class.java)
-        intent.putExtra("Nome",editTextNomeCompleto.text.toString())
+        var VM = ViewModelProviders.of(this).get(DadosViewModel::class.java)
 
         buttonIniciar.setOnClickListener{
-            if(editTextNomeCompleto.text.toString().isNullOrEmpty()) {
-                val iniciar = Intent(this, ResultadoActivity::class.java)
-                editTextNomeCompleto
+            if(!editTextNomeCompleto.text.isNullOrBlank()) {
+                var intent =Intent(this,ResultadoActivity::class.java)
+                intent.putExtra("Nome",editTextNomeCompleto.text.toString())
+
+                val iniciar = Intent(this, QuestionarioActivity::class.java)
+
                 startActivity(iniciar)
             }else{
                 Toast.makeText(
@@ -29,6 +33,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
 }
 
 

@@ -79,28 +79,7 @@
         android:label="fragment_questao_7"
         tools:layout="@layout/fragment_questao_7" >
         <action
-            android:id="@+id/action_questao7Fragment_to_questao8Fragment"
-            app:destination="@id/questao8Fragment" />
-        <action
-            android:id="@+id/action_questao7Fragment_to_questao8Fragment2"
-            app:destination="@id/questao8Fragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/questao8Fragment"
-        android:name="com.example.pefil_investidor_tp3.Fragments.Questao8Fragment"
-        android:label="fragment_questao_8"
-        tools:layout="@layout/fragment_questao_8" >
-        <action
-            android:id="@+id/action_questao8Fragment_to_questao9Fragment"
-            app:destination="@id/questao9Fragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/questao9Fragment"
-        android:name="com.example.pefil_investidor_tp3.Fragments.Questao9Fragment"
-        android:label="fragment_questao_9"
-        tools:layout="@layout/fragment_questao_9" >
-        <action
-            android:id="@+id/action_questao9Fragment_to_questao10Fragment"
+            android:id="@+id/action_questao7Fragment_to_questao10Fragment"
             app:destination="@id/questao10Fragment" />
     </fragment>
 </navigation>
