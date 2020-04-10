@@ -13,7 +13,9 @@ class ResultadoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_resultado)
 
         var nome = intent.getStringExtra("Nome")
+        var perfil = intent.getStringExtra("perfil")
 
         textViewNome.text = nome
+        //textViewPerfil.text = perfil
     }
 }

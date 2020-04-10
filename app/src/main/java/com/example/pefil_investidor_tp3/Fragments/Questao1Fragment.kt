@@ -6,16 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProviders
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.example.pefil_investidor_tp3.Model.DadosViewModel
 import com.example.pefil_investidor_tp3.R
-import kotlinx.android.synthetic.main.activity_questionario.*
 import kotlinx.android.synthetic.main.fragment_questao_1.*
 
-/**
- * A simple [Fragment] subclass.
- */
 class Questao1Fragment : Fragment() {
 
     override fun onCreateView(
@@ -24,27 +19,29 @@ class Questao1Fragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_questao_1, container, false)
-
-        val model = ViewModelProviders.of(this)[DadosViewModel::class.java]
-        model.SomaPontos.add(validarResposta())
-        findNavController().navigate(R.id.perguntaDoisFragment)
-
     }
-    fun validarResposta(): Int {
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        var model: DadosViewModel? = null
+        activity?.let{
+            model = ViewModelProviders.of(it)[DadosViewModel::class.java]
+        }
+
+        /*buttonAvancar.setOnClickListener{
+            validarResposta(model)
+            findNavController().navigate(R.id.perguntaDoisFragment)
+        }*/
+    }
+
+    fun validarResposta(model: DadosViewModel?) {
         var pontuacao = when (radioGroup.checkedRadioButtonId) {
-                radioResposta1.id -> 0
-                radioResposta2.id -> 2
-                radioResposta3.id -> 3
-                radioResposta4.id -> 4
-                else -> "hello"/*Toast.makeText(
-                    this,
-                    "Selecione um opção para continuar.",
-                    Toast.LENGTH_SHORT
-                ).show()*/
-            }
-
-
-        return 0 //pontuacao
+                radioResposta1.id -> model!!.SomaPontos.add(0)
+                radioResposta2.id -> model!!.SomaPontos.add(2)
+                radioResposta3.id -> model!!.SomaPontos.add(3)
+            else -> model!!.SomaPontos.add(4)
+        }
     }
 }
 
